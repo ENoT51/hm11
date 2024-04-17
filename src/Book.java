@@ -34,6 +34,7 @@ public class Book {
         this.publicationYear = publicationYear;
     }
 
+    @Override
     public String toString () {
         return "Книга: " + this.bookTitle + ", автор: " + this.nameOfAuthor + ", год издания:" + this.publicationYear;
     }

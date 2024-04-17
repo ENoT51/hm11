@@ -5,7 +5,18 @@ public class Author {
         this.firstName = firstName;
         this.secondName = secondName;
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return  true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return secondName.equals(author.secondName);
 
+    }
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(secondName);
+    }
     public String getFirstName() {
         return firstName;
     }
@@ -13,6 +24,7 @@ public class Author {
     public String getSecondName() {
         return secondName;
     }
+    @Override
     public String toString(){
         return this.firstName + " " + this.secondName;
     }
