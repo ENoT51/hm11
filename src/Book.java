@@ -36,7 +36,7 @@ public class Book {
 
     @Override
     public String toString () {
-        return "Книга: " + this.bookTitle + ", автор: " + this.nameOfAuthor + ", год издания:" + this.publicationYear;
+        return "Книга: " + this.getBookTitle() + ", автор: " + this.getNameOfAuthor() + ", год издания:" + this.getPublicationYear();
     }
 
 }

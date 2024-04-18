@@ -26,6 +26,6 @@ public class Author {
     }
     @Override
     public String toString(){
-        return this.firstName + " " + this.secondName;
+        return this.getFirstName() + " " + this.getSecondName();
     }
 }
