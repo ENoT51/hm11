@@ -10,7 +10,7 @@ public class Author {
         if (this == o) return  true;
         if (o == null || getClass() != o.getClass()) return false;
         Author author = (Author) o;
-        return secondName.equals(author.secondName);
+        return firstName.equals((author.firstName)) && secondName.equals(author.secondName);
 
     }
     @Override

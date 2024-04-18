@@ -12,7 +12,7 @@ public class Book {
         if (this == o) return  true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return bookTitle.equals(book.bookTitle);
+        return bookTitle.equals(book.bookTitle) && nameOfAuthor.equals(book.nameOfAuthor);
 
     }
     @Override

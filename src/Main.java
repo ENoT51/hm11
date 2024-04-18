@@ -11,7 +11,7 @@ public class Main {
         Author pushkin = new Author("Александр", "Пушкин");
         Book onegin = new Book("Детство", pushkin, 1833);
         System.out.println(onegin);
-
+        System.out.println(tolstoy.equals(pushkin));
         System.out.println(childhood.equals((onegin)));
     }
 }
