@@ -20,7 +20,6 @@ public class Author {
     public String getFirstName() {
         return firstName;
     }
-
     public String getSecondName() {
         return secondName;
     }

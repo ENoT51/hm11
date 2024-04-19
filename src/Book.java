@@ -12,7 +12,7 @@ public class Book {
         if (this == o) return  true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return bookTitle.equals(book.bookTitle) && nameOfAuthor.equals(book.nameOfAuthor);
+        return bookTitle.equals(book.bookTitle) && nameOfAuthor.equals(book.nameOfAuthor) && publicationYear == book.publicationYear;
 
     }
     @Override
@@ -22,21 +22,17 @@ public class Book {
     public String getBookTitle() {
         return bookTitle;
     }
-
     public int getPublicationYear() {
         return publicationYear;
     }
-
     public Author getNameOfAuthor(){
         return nameOfAuthor;
     }
     public void setPublicationYear(int publicationYear){
         this.publicationYear = publicationYear;
     }
-
     @Override
     public String toString () {
         return "Книга: " + this.getBookTitle() + ", автор: " + this.getNameOfAuthor() + ", год издания:" + this.getPublicationYear();
     }
-
 }
